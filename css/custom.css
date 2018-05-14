@@ -1,0 +1,45 @@
+@media screen and (max-width: 991px){
+    .bottom-block .blocks > div{
+        padding-bottom: 40px !important;
+    }
+
+    .bottom-block .blocks > div:nth-child(3){
+        padding-bottom:0px !important;
+    }
+
+    .vk, .fb{
+        width: 70px;
+        height: 70px;
+    }
+
+    .vk i{
+        top: 13px;
+        left: 7px;
+        font-size: 4rem;
+    }
+
+    .fb i{
+        font-size: 4rem;
+        top: 11px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .vk, .fb{
+        width: 50px;
+        height: 50px;
+    }
+
+    .vk i{
+        top: 8px;
+        left: 3px;
+        font-size: 3rem;
+    }
+
+    .fb i{
+        font-size: 3rem;
+        top: 6px;
+        left: 12px;
+    }
+}
