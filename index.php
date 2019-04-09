@@ -1,11 +1,12 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="ru">
   <head>
-    <title>Заголовок страницы</title>
+    <meta charset="UTF-8">
+    <title>Honey Hunters тестовое задание</title>
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/bootstrap-theme.css"/>
     <link rel="stylesheet" href="css/bundle.css"/>
-    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="css/custom.css?<?=time();?>"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -69,16 +70,16 @@
 
           <?
 
-            require_once 'db_connect/connection.php'; // подключаем скрипт
-            require_once 'db_connect/functions.php';// Мои кастомные функции
-            // подключаемся к серверу
+            require_once 'db_connect/connection.php'; // Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ ÑÐºÑ€Ð¸Ð¿Ñ‚
+            require_once 'db_connect/functions.php';// ÐœÐ¾Ð¸ ÐºÐ°ÑÑ‚Ð¾Ð¼Ð½Ñ‹Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸
+            // Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ÑÑ Ðº ÑÐµÑ€Ð²ÐµÑ€Ñƒ
 
 
-            // выполняем операции с базой данных
+            // Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÑÐµÐ¼ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸ Ñ Ð±Ð°Ð·Ð¾Ð¹ Ð´Ð°Ð½Ð½Ñ‹Ñ…
                 getData($link, 'Comment');
 
 
-            // закрываем подключение
+            // Ð·Ð°ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ
             mysqli_close($link);
 
           ?>

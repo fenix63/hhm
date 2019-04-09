@@ -1,9 +1,9 @@
 <?php
-    $host = 'mysql.hostinger.ru'; // адрес сервера
-    $database = 'u653721317_test'; // имя базы данных
-    $user = 'u653721317_user'; // имя пользователя
+    $host = 'localhost'; // адрес сервера
+    $database = 'v9061216_db'; // имя базы данных
+    $user = 'v9061216_db'; // имя пользователя
     $password = '509912'; // пароль
 
     $link = mysqli_connect($host, $user, $password, $database)
-    or die("Ошибка " . mysqli_error($link));
+    or die("Ошибка123 " . mysqli_error($link));
 ?>

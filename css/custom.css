@@ -1,3 +1,24 @@
+.comment{
+    min-height: 370px;
+}
+
+.email{
+    min-height: 125px;
+}
+
+.comment-content{
+    height: 360px;
+}
+
+.comment-msg{
+    word-wrap: break-word;
+    
+}
+
+.bottom-block .comment .comment-msg{
+    padding: 0rem 7rem;
+}
+
 @media screen and (max-width: 991px){
     .bottom-block .blocks > div{
         padding-bottom: 40px !important;
